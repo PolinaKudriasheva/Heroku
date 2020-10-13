@@ -2,7 +2,7 @@
   "encoding": "UTF-8",
   "headers": {
     "/*": {
-      "X-Author": "Kudriasheva"
+      "X-Author": "Kudriasheva",
       "Access-Control-Allow-Origin": "*"
     }
   }
