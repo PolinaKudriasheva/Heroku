@@ -45,9 +45,9 @@ export default (express, bodyParser, createReadStream, writeFileSync, crypto, ht
     })
 
     .get('/wordpress/*', (req, res) => {
-        console.log('https://week8158923685.wordpress.com/'+req.params[0]);
+        console.log('https://week8158923685.wordpress.com/wordpress/'+req.params[0]);
         res.header('Content-Type', 'application/json');
-        void http.get('https://week8158923685.wordpress.com/'+req.params[0], (r, buffer='') => {
+        void http.get('https://week8158923685.wordpress.com/wordpress/'+req.params[0], (r, buffer='') => {
             r
             .on('data', data => buffer += data)
             .on('end', () => res.send(buffer));
